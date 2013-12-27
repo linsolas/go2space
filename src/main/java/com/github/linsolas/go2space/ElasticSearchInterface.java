@@ -55,11 +55,6 @@ public class ElasticSearchInterface {
 
 
     public static void main(String[] args) throws Exception {
-        logger.info("Hello World");
-
-        System.exit(0);
-
-
         Client client = NodeBuilder.nodeBuilder().node().client();
         if (CLEAR_INDEX) {
             clearIndex(client);
